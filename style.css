@@ -1,0 +1,205 @@
+html { 
+    color: rgb(56, 56, 56);
+    font-family:'Montserrat', sans-serif;
+    background-color: #D7CEC7;
+}
+
+.header {
+  background-color: #76323F;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-bottom: 25px;
+  max-width: 100%;
+  height: 100px;
+  color:white;
+}
+
+p {
+  font-style: italic;
+  font-size: large;
+}
+
+button {
+  font-family:'Montserrat', sans-serif;
+}
+
+#container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    grid-template-columns: auto auto auto auto;
+    background-color:#cebdb1;
+    min-height: 380px;
+} 
+
+.book {
+    height: 260px;
+    width: 200px;
+    background-color: #C09F80;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    position: relative;
+    border: solid 1px #998068;
+}
+
+.bookTitle {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.bookAuthor {
+  font-size: 20px;
+  margin-top: 10px
+}
+
+.pageNumber {
+  margin-top: 10px;
+}
+
+.bookTitleShrink {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.bookAuthorShrink {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+
+.remove {
+    height: 40px;
+    width: 220px;  
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    background-color: #565656;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+  
+  .remove:active {
+    background-color: #3f3f3f;
+  }
+
+.toggleRead {
+  height: 40px;
+  width: 120px;  
+  position: relative;
+  color: #fff;
+  background-color: #76323F;
+  border: solid #76323F;
+  margin-top: 10px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 60px;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+  
+  .toggleRead:active {
+    background-color: #4e1f27;
+    border: solid #4e1f27;
+    transform: translateY(2px);
+  }
+
+.toggleNotRead {
+  height: 40px;
+  width: 120px;  
+  position: relative;
+  color: #76323F;
+  background-color: #C09F80;
+  border: solid #76323F;
+  margin-top: 10px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 60px;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+  .toggleNotRead:active {
+    transform: translateY(2px);
+  }
+
+.button {
+    padding: 10px 20px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    background-color:#76323F;
+    border: solid #76323F;
+    cursor: pointer;
+}
+  
+  .button:hover {
+    background-color: #76323F;
+    color: white;
+  }
+  
+  .button:active {
+    background-color: #4e1f27;
+    transform: translateY(2px);
+    border: solid #4e1f27;
+  }
+
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 15px;
+    z-index: 9;
+    background-color: #cebdb1;
+    border: solid #4e1f27;
+    color: #4e1f27;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+}
+
+.form-container input[type=text], .form-container input[type=number] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    font-family: "Montserrat", sans-serif;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=number]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #cebdb1;
+    border: solid #4e1f27;
+    color: #4e1f27;
+    cursor: pointer;
+    width: 49%;
+    height: 40px;
+    text-align: center;
+    margin-bottom:10px;
+}
+
+.form-container .btn:active {
+  background-color: #4e1f27;
+  border: solid #4e1f27;
+  color: #cebdb1;
+}

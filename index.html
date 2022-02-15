@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Library</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+
+<body>
+
+<div class="">
+ <div class="header">
+   <h1>📚 Library 📚</h1>
+   <p>~ A virtual bookshelf ~</p>
+</div>
+<br></br>
+ <button class="button">Add a book</button>
+ <br></br>
+ <br></br>
+ <div id="container">Your library is currently empty.</div>
+ 
+ <div class="form-popup" id="myForm">
+    <form class="form-container">
+      
+      <h1>Add a book</h1>
+  
+      <label for="title"><b>Book</b></label>
+      <input type="text" placeholder="Enter book title" id="title" required>
+  
+      <label for="author"><b>Author</b></label>
+      <input type="text" placeholder="Enter book author" id="author" required>
+
+      <label for="pages"><b>Pages</b></label>
+      <input type="number" placeholder="Enter number of pages" id="pages" required>
+
+      <label for="read"><b>Finished reading?</b></label> <br>
+      <input type="radio" id="read" name="read" value="read">
+        <label for="read">Yes</label>
+      <input type="radio" id="notread" name="read" value="not read yet">
+        <label for="notread">No</label>
+
+      <br></br>
+  
+      <button type="submit" class="btn add" onclick="closeForm()">Add</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+    </form>
+  </div>
+</div>
+
+</body>
+<script src="library.js"></script>
+</html>
