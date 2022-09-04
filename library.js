@@ -1,24 +1,39 @@
 // Array to store the books
 let myLibrary = [];
 
-// Book object
-function Book(title, author, pages, readOrNot) {
+// Book object (REPLACED W CLASS BELOW)
+/*function Book(title, author, pages, readOrNot) {
     this.title = title;
     this.author = author;
     this.pages = pages;
     this.readOrNot = readOrNot;
+}*/
+
+class Book {
+  constructor(title, author, pages, readOrNot) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.readOrNot = readOrNot;
+  }
+
+  changeReadStatus() {
+    this.readOrNot === "read" ? this.readOrNot = "not read yet" : this.readOrNot = "read";
+    displayBooks();
+  }
+
 }
 
-// Function to change "read" status for any book
-Book.prototype.changeReadStatus = function() {
+// Function to change "read" status for any book (MOVED INTO CLASS ABOVE)
+/*Book.prototype.changeReadStatus = function() {
   this.readOrNot === "read" ? this.readOrNot = "not read yet" : this.readOrNot = "read";
   displayBooks();
-}
+}*/
 
 
-// Using Object.create to return a new object with the Book prototype
-function NewBook() { }
-NewBook.prototype = Object.create(Book.prototype);
+// Using Object.create to return a new object with the Book prototype (REMOVED)
+/*function NewBook() { }
+NewBook.prototype = Object.create(Book.prototype);*/
 
 // Adding books to library using form input and button
 // Creating new book object with properties pulled from user input values
@@ -26,7 +41,7 @@ NewBook.prototype = Object.create(Book.prototype);
 // Resetting form
 function addBookToLibrary(ev) {
   ev.preventDefault();
-  let newBook = new NewBook();
+  let newBook = new Book();
   newBook.title = document.getElementById("title").value;
   newBook.author = document.getElementById("author").value;
   newBook.pages = document.getElementById("pages").value;
