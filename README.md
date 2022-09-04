@@ -1,5 +1,7 @@
 # Library
 
+###### Update 9/4/2022: Created this separate branch to refactor constructors into classes for practice
+
 This is a virtual bookshelf. It can be used to keep a record of the user's books. Books can be added or removed by the user.
 Built using Javascript and HTML/CSS.
 
